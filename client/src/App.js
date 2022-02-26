@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react'
+import {BrowserRouter as Router} from 'react-router-dom'
+import Navbar from "./components/Navbar";
+import LandingPage from "./components/LandingPage";
+import Sequencer from "./components/Sequencer";
 import './App.css';
 
+
 function App() {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    fetch('/me').then((resp) => {
+      if (resp.ok) {
+        resp.json().then((user) => setUser(user))
+      }
+    })
+  }, [])
+
+  if (!user) return <LandingPage onLogin={setUser} />
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar user={user} setUser={setUser} />
+      <Sequencer user={user} />
+    </Router>
   );
 }
 
