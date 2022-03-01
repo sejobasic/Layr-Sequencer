@@ -60,7 +60,7 @@ function LoginForm({onLogin, setShowLogin}) {
             }) :
             null
           }
-          <Button color="black" variant="primary" type="submit" style={{marginTop: '10px', marginBottom: '2rem'}}>
+          <Button  variant="primary" type="submit" style={{marginTop: '10px', marginBottom: '2rem'}}>
               {isLoading ? "Loading..." : "Login"}
           </Button>
               <p>Don't have an account?</p>

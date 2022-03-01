@@ -6,5 +6,5 @@ class User < ApplicationRecord
     has_many :patterns, through: :ideas
 
     validates :username, presence: true, uniqueness: true
-    validates :password_digest, presence: true
+    validates :password_digest, presence: true, uniqueness: true
 end

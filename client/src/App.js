@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import {BrowserRouter as Router} from 'react-router-dom'
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
-import Sequencer from "./components/Sequencer";
+import SequencerMain from "./components/SequencerMain";
 import './App.css';
 
 
@@ -21,8 +21,8 @@ function App() {
 
   return (
     <Router>
-      <Navbar user={user} setUser={setUser} />
-      <Sequencer user={user} />
+      <NavBar user={user} setUser={setUser} />
+      <SequencerMain user={user} />
     </Router>
   );
 }

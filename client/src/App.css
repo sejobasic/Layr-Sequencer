@@ -1,22 +1,92 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
+/* Logo Styling Here */
 .App-logo {
   display: block;
-  height: 80vmin;
+  height: 60vmin;
   margin-left: auto;
   margin-right: auto;
-  vertical-align: middle;
+  justify-content: center;
 }
+
+
 .App-logo:hover {
   opacity: 0.5;
   cursor: pointer;
 
 }
 
+.landing-page{
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+}
+
+
+/* Navbar Styling Here */
+.nav-logo img {
+  height: 50px;
+  width: 50px;
+}
+
+#navbar {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#navbar {
+  background-color: #292929 !important;
+}
+
+#nav-text {
+  color: #8d8e8f !important;
+}
+
+.nav-text {
+  color: #8d8e8f !important;
+}
+
+#basic-navbar-nav {
+  color: #8d8e8f !important;
+}
+
+/* Sequencer Styling Here */
+.sequencer:body {
+  background-color: #8d8e8f;
+}
+
+
+
+/* Button Styling Here */
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #3eda50 !important;
+  border-color: #3eda50 !important;
+  color: #292929 !important;
+}
+.btn-primary:hover {
+  background-color: #8bdb95 !important;
+}
+
+.errors {
+  color: red;
+}
+
+
+
+/* Animations Here */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .nav-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -29,3 +99,17 @@
     transform: rotate(360deg);
   }
 }
+@keyframes nav-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Synth Styling Here */
+/* .synth-landing {
+  height: 50%;
+  width: 50%;
+} */
