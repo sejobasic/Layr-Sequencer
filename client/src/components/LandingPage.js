@@ -1,14 +1,14 @@
 import React, {useState} from 'react'
 import LoginForm from './LoginForm'
 import SignupForm from './SignupForm'
-import Synth from './Synth'
+// import Synth from './Synth'
 import * as Tone from 'tone'
 import logo from '../assets/logo3.png';
 import sound from "../assets/test.mp3"
 
 
 function LandingPage({onLogin}) {
-    const [showLogin, setShowLogin] = useState(false)
+    const [showLogin, setShowLogin] = useState(true)
     const [showForm, setShowForm] = useState(true)
 
 

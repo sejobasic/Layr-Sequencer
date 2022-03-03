@@ -57,8 +57,7 @@ function LoginForm({onLogin, setShowLogin}) {
           {errors ?
             errors.map(e => {
             return (<p className='errors' key={e}>{e}</p>)
-            }) :
-            null
+            }) : null
           }
           <Button  variant="primary" type="submit" style={{marginTop: '10px', marginBottom: '2rem'}}>
               {isLoading ? "Loading..." : "Login"}

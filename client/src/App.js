@@ -3,6 +3,11 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
 import SequencerMain from "./components/SequencerMain";
+import Sidebar from "./components/Sidebar";
+import Piano from "./components/Piano";
+
+
+
 import './App.css';
 
 
@@ -22,7 +27,9 @@ function App() {
   return (
     <Router>
       <NavBar user={user} setUser={setUser} />
+      <Sidebar />
       <SequencerMain user={user} />
+      <Piano />
     </Router>
   );
 }

@@ -13,9 +13,8 @@
 
 
 .App-logo:hover {
-  opacity: 0.5;
+  opacity: 0.7;
   cursor: pointer;
-
 }
 
 .landing-page{
@@ -70,7 +69,9 @@
 }
 .btn-primary:hover {
   background-color: #8bdb95 !important;
+  box-shadow: 0 5px 10px #3eda50;
 }
+
 
 .errors {
   color: red;
@@ -108,8 +109,112 @@
   }
 }
 
-/* Synth Styling Here */
-/* .synth-landing {
-  height: 50%;
-  width: 50%;
+
+/* Sequencer styling here */
+
+.sequencer{
+  text-align: center;
+  margin-top: 100px;
+  justify-content: center;
+  height: 100vh;
+}
+
+.seq {
+  width: 4vh;
+  height: 5vh;
+  padding: 1vh;
+  cursor: pointer;
+  background-color: #292929 !important;
+}
+
+.seq:checked {
+  background-color: #3eda50 !important;
+}
+
+input[type=checkbox] {
+  accent-color: #3eda50 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #8d8e8f !important;
+  width: 2vh;
+  height: 2vh;
+  padding: 1%;
+  cursor: pointer;
+  background-color: #292929 !important;
+}
+
+
+/* Sidebar styling here */
+
+.sidebar {
+  background-color: #292929 !important;
+  color: #8d8e8f !important;
+  border: 1px solid #8d8e8f !important;
+  border-radius: 7px;
+  /* box-shadow: inset 0px 0px 15px 1px #3eda50; */
+}
+
+.inst-btn {
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+/* .btn-glow:hover{
+  box-shadow: 0 5px 10px #3eda50;
 } */
+
+
+.sidebar-elements:hover{
+  color:#3eda50 !important;
+  cursor: pointer;
+}
+
+.play-btn {
+  margin-right: 500px;
+}
+
+
+/* Piano Styling Here */
+.piano{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 10vh;
+  justify-content: center;
+  height: 100vh;
+}
+
+.key{
+  background-color: #292929;
+  height: 30vh;
+  width: 6vh;
+  border: 0.2vh solid black;
+  cursor: pointer;
+}
+
+.key-text {
+  position: relative;
+  color: #8d8e8f;
+  font-weight: 600vh;
+  font-size: 2.5vh;
+  margin-top: 25vh;
+  cursor: pointer;
+}
+
+.key.pressed, .key.flat.pressed {
+  background-color: #3eda50;
+}
+
+.key-flat {
+  position: relative;
+  background-color: #8d8e8f;
+  border: 0.2vh solid black;
+  margin-left: -1.5vh;
+  margin-right: -10vh;
+  height: 20vh;
+  width: 3vh;
+  z-index: 2;
+  cursor: pointer;
+}
