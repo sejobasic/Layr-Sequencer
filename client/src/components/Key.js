@@ -1,60 +1,29 @@
 import React, { useState }from 'react'
+// import C2 from "../assets/piano/ C2.mp3"
+import _ from 'lodash';
 
 function Key({note}) {
-
-
-    const noteToKey = {
-        C2: 'z',
-        Cf2: 'q',
-        D2: 'x',
-        Df2: 'w',
-        E2: 'c',
-        F2: 'v',
-        Ff2: 'e',
-        G2: 'b',
-        Gf2: 'r',
-        A2: 'n',
-        Af2: 't',
-        B2: 'm',
-        C3: 'a',
-        Cf3: 'y',
-        D3: 's',
-        Df3: 'u',
-        E3: 'd',
-        F3: 'f',
-        Ff3: 'i',
-        G3: 'g',
-        Gf3: 'o',
-        A3: 'h',
-        Af3: 'p',
-        B3: 'j',
-      };
-
-
-
     
-
+    let keyClassName = "key";
+    
+    const noteIsFlat = note.length > 2;
+    // # This allows us to show the flat keys without rendering the text on top
+    if (noteIsFlat) {
+      keyClassName += " flat";
+    }
 
   return (
-
-    <div>
-{/* If note length is greater than 1 show flat keys */}
-        {note.length > 2 ? (
-          <div className='key-flat'></div>
-         ) : (
-            <div className='key'>
-              <div className="key-text">{note}</div>
-            </div>
-          )
-        }
-    </div>
-
-
-    // <div className="key">
-    //     <div className="key-text">
-    //         {note}
-    //     </div>
-    // </div>
+      <div>
+{/* If note length is greater than 2 show flat keys without text */}
+        {noteIsFlat ? (
+            <div id={note+'1'} className={keyClassName}></div>
+        ) : (
+            <div id={note+'1'} className={keyClassName}>
+            <div className="key-text">{note}</div>
+          </div>
+        )
+    }
+      </div>
   )
 }
 

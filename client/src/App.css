@@ -181,7 +181,7 @@ input[type=checkbox] {
   display: flex;
   flex-direction: row;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 1vh;
   justify-content: center;
   height: 100vh;
 }
@@ -203,11 +203,8 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
-.key.pressed, .key.flat.pressed {
-  background-color: #3eda50;
-}
 
-.key-flat {
+.key.flat {
   position: relative;
   background-color: #8d8e8f;
   border: 0.2vh solid black;
@@ -218,3 +215,8 @@ input[type=checkbox] {
   z-index: 2;
   cursor: pointer;
 }
+
+.key.pressed, .key.flat.pressed {
+  background-color: #3eda50;
+}
+

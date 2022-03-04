@@ -3,7 +3,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
 import SequencerMain from "./components/SequencerMain";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/modals/Sidebar";
 import Piano from "./components/Piano";
 
 

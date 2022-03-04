@@ -40,6 +40,9 @@ function handleChange() {
 
   return (
     <div>
+      <div>
+      {/* <FontAwesomeIcon icon="fa-solid fa-square-question" /> */}
+      </div>
     <div className="sequencer">
       <div className="kick" id="kick" onChange={handleChange}>
         <input type="checkbox" className="seq" />
