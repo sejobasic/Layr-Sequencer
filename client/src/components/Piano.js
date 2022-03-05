@@ -70,19 +70,21 @@ function Piano() {
       const key = event.key;
       // # When correct key on keyboard is pushed we play the corresponding note
       playNote(keyToNote[key]);
-      let element=document.getElementById(keyToNote[key]+'1');
+      let element = document.getElementById(keyToNote[key]+'1');
       // # Here we add pressed text to our class so that our ui changes on key down
-      if(element){
+      if (element){
         element.classList.add('pressed')
         // # After some time we remove the pressed text to change our ui
         setTimeout(()=>{
           element.classList.remove('pressed');
         },[200])
       }
+      event.preventDefault()
     }
 
       // # When a key is pressed we want to add it to our pressedKeys array inside of our state
       window.addEventListener('keydown', handleKeyDown);
+      
 
   
     // # Iterate through notes array and create a key with an index and note prop

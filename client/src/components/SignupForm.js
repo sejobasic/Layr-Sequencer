@@ -30,6 +30,7 @@ function SignupForm({onLogin, setShowLogin}) {
       }
     });
   }
+  
 
   return (
     <div className="form-container">
@@ -77,7 +78,7 @@ function SignupForm({onLogin, setShowLogin}) {
         <Button type="submit" style={{marginTop: '10px', marginBottom: '2rem'}}>{isLoading ? "Loading..." : "Sign Up"}</Button>
             <p>Already have an account? </p>
         <Button onClick={() => setShowLogin(true)}>
-            Log In
+            Sign In
         </Button>
       </Form>
     </div>

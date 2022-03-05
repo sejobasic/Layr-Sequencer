@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {Form, Button} from 'react-bootstrap'
+import '../App.css'
 
 function LoginForm({onLogin, setShowLogin}) {
   const [username, setUsername] = useState("");
@@ -38,7 +39,7 @@ function LoginForm({onLogin, setShowLogin}) {
               type="text"
               id="username"
               placeholder="Enter Username"
-              autoComplete="off"
+              autoComplete="on"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -60,12 +61,9 @@ function LoginForm({onLogin, setShowLogin}) {
             }) : null
           }
           <Button  variant="primary" type="submit" style={{marginTop: '10px', marginBottom: '2rem'}}>
-              {isLoading ? "Loading..." : "Login"}
-          </Button>
-              <p>Don't have an account?</p>
-          <Button variant="primary" onClick={() => setShowLogin(false)}>
-              Sign Up
-          </Button>
+              {isLoading ? "Loading..." : "Sign In"}
+          </Button> <Button className="signup-btn" variant="primary" onClick={() => setShowLogin(false)}>Sign Up</Button>
+          
         </Form>
       </div>
     </div>

@@ -1,30 +1,13 @@
 import React,{ useState } from 'react'
 import * as Tone from 'tone'
-import { Sequencer } from 'react-nexusui';
-import sound from "../assets/test.mp3"
-import kick from "../assets/kick.wav"
-import snare from "../assets/snare.wav"
-import hat from "../assets/hat.wav"
+import ModalSeq from './modals/ModalSeq'
+import {motion, AnimatePresence} from "framer-motion"
+import '../App.css'
 
 
 function SequencerMain() {
-
-  // const k = new Tone.Player(kick).toDestination
-  // const s = new Tone.Player(snare).toDestination
-  // const h = new Tone.Player(hat).toDestination
-
-  // let index = 0;
-  // Tone.Transport.scheduleRepeat(repeat, '16n')
-  // Tone.Transport.start();
-
-  // function repeat() {
-  //   let step = index % 16;
-  //    this.kickInput = React.createRef();
-  //   if (this.kickInput.checked) {
-  //     k.start();
-  //   }
-  //   index++
-  // }
+  const [modalShow, setModalShow] = useState(false);
+  
 function handleChange() {
   const osc = new Tone.Oscillator().toDestination();
   // repeated event every 8th note
@@ -40,10 +23,15 @@ function handleChange() {
 
   return (
     <div>
-      <div>
-      {/* <FontAwesomeIcon icon="fa-solid fa-square-question" /> */}
-      </div>
     <div className="sequencer">
+      <i 
+        class="fa-regular fa-circle-question"
+        onClick={() => setModalShow(true)}
+      ></i>
+      <ModalSeq
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
       <div className="kick" id="kick" onChange={handleChange}>
         <input type="checkbox" className="seq" />
         <input type="checkbox" className="seq" />
