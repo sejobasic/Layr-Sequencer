@@ -36,7 +36,7 @@ function SignupForm({onLogin, setShowLogin}) {
     <div className="form-container">
     <div className="d-grid age-100 justify-content-center align-items-center" id="form-container">
       <Form className="text-center rounded p-4 p-sm-3" onSubmit={handleSubmit} id="sign-in-form">
-        <Form.Group className="mb-3">
+        <Form.Group id="form-text" className="mb-3">
           <Form.Label htmlFor="username">Username</Form.Label>
           <Form.Control
             type="text"
@@ -46,7 +46,7 @@ function SignupForm({onLogin, setShowLogin}) {
             onChange={(event) => setUsername(event.target.value)}
           />
         </Form.Group>
-        <Form.Group className="mb-3">
+        <Form.Group id="form-text" className="mb-3">
           <Form.Label htmlFor="password">Password</Form.Label>
           <Form.Control
             type="password"
@@ -56,7 +56,7 @@ function SignupForm({onLogin, setShowLogin}) {
             autoComplete="current-password"
           />
         </Form.Group>
-        <Form.Group className="mb-3">
+        <Form.Group id="form-text" className="mb-3">
           <Form.Label htmlFor="password">Password Confirmation</Form.Label>
           <Form.Control
             type="password"
@@ -75,11 +75,11 @@ function SignupForm({onLogin, setShowLogin}) {
           }) :
           null
         }
-        <Button type="submit" style={{marginTop: '10px', marginBottom: '2rem'}}>{isLoading ? "Loading..." : "Sign Up"}</Button>
-            <p>Already have an account? </p>
-        <Button onClick={() => setShowLogin(true)}>
+        <button className="login-btn" type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
+            <p className="acc" >Already have an account? </p>
+        <button className="login-btn" onClick={() => setShowLogin(true)}>
             Sign In
-        </Button>
+        </button>
       </Form>
     </div>
   </div>

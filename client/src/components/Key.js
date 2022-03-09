@@ -1,11 +1,8 @@
-import React, { useState }from 'react'
-// import C2 from "../assets/piano/ C2.mp3"
-import _ from 'lodash';
+import React from 'react'
 
 function Key({note}) {
     
     let keyClassName = "key";
-    
     const noteIsFlat = note.length > 2;
     // # This allows us to show the flat keys without rendering the text on top
     if (noteIsFlat) {

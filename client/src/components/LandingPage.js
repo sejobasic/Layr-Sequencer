@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import LoginForm from './LoginForm'
 import SignupForm from './SignupForm'
+import video from '../assets/video.mp4'
 // import Synth from './Synth'
-import * as Tone from 'tone'
-import logo from '../assets/logo3.png';
-import sound from "../assets/test.mp3"
+// import * as Tone from 'tone'
+import logo from '../assets/logo.png';
 
 
 function LandingPage({onLogin}) {
@@ -35,8 +35,9 @@ function LandingPage({onLogin}) {
   // }
 
   return (
+    <div className="landing-container">
     <div className="landing-page">
-      <style>{'body { background-color: #8d8e8f; }'}</style>
+      {/* <style>{'body { background-color: #8d8e8f; }'}</style> */}
         <div className="submit-container">
           <div className="d-flex justify-content-center align-items-center">
           {showForm ? (
@@ -51,6 +52,7 @@ function LandingPage({onLogin}) {
             )}
           </div>
         </div>
+    </div>
     </div>
   )
 }

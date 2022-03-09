@@ -1,4 +1,4 @@
-import React,{ useEffect, useState, useRef } from 'react'
+import React, {useEffect} from 'react'
 import Key from './Key'
 import _ from 'lodash';
 
@@ -82,8 +82,17 @@ function Piano() {
       event.preventDefault()
     }
 
-      // # When a key is pressed we want to add it to our pressedKeys array inside of our state
+    // useEffect for event passing an empty array [] as the dependencies will make the effect run only on the initial render
+    useEffect(() => {
       window.addEventListener('keydown', handleKeyDown);
+    
+      // cleanup our event after each render, React will call a fresh instance of handleKeyDown
+      // it will call the previous instance’s cleanup function beforehand removing the previous listener. 
+      return () => {
+        window.removeEventListener('keydown', handleKeyDown);
+      };
+    });
+
       
 
   
@@ -96,6 +105,7 @@ function Piano() {
             />
         );
     });
+
 
 
     // Iterate through our notes array and create an audio tag with an id a key and the source path the audio files are coming from

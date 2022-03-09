@@ -1,5 +1,5 @@
 import React, { useState }from 'react'
-import { Navbar, Nav, Container, Button, Offcanvas} from 'react-bootstrap';
+import { Button, Offcanvas} from 'react-bootstrap';
 import '../../App.css'
 
 
@@ -30,11 +30,11 @@ function Sidebar() {
     onHide={handleClose}
     >
       <Offcanvas.Header closeVariant="white" closeButton>
-        <Offcanvas.Title>Pick Instrument Here</Offcanvas.Title>
+        <Offcanvas.Title>Pick Instrument</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
       <h2 className="sidebar-elements">Synths</h2>
-      <h2 className="sidebar-elements">Drums</h2>
+      <h2 className="sidebar-elements">Drum Kits</h2>
       <h2 className="sidebar-elements">Effects</h2>
       </Offcanvas.Body>
     </Offcanvas>

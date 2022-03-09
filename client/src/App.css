@@ -1,6 +1,4 @@
-
-
-/* Logo Styling Here */
+/* Logo and LandingPage Styling Here */
 .App-logo {
   display: block;
   height: 60vmin;
@@ -20,6 +18,52 @@
   justify-content: center;
   height: 100vh;
   display: flex;
+}
+
+.login-btn {
+  color: #8d8e8f !important;
+  border: none;
+  background: none;
+}
+
+.login-btn:hover {
+  color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
+}
+
+.landing-container {
+  background: url(./assets/bg5.png) no-repeat; 
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.acc{
+  color: #8d8e8f !important;
+  margin-top: 4vh;
+}
+
+.form-control:valid {
+  background-color:  #8d8e8f !important;
+  border: none;
+}
+
+#form-text {
+  color: #8d8e8f !important;
+}
+
+
+/* Form Styling here  */
+.form-container {
+  display: block;
+  height: 60vmin;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  justify-content: center;
+
 }
 
 
@@ -45,18 +89,12 @@
 
 .nav-text:hover {
   color: #3eda50 !important;
+  text-shadow: 0 0.5px 7px #3eda50;
 }
-
 
 #basic-navbar-nav {
   color: #8d8e8f !important;
 }
-
-/* Sequencer Styling Here */
-.sequencer:body {
-  background-color: #8d8e8f;
-}
-
 
 
 /* Button Styling Here */
@@ -76,71 +114,118 @@
   margin-bottom: 22px !important;
 }
 
-
-.errors {
-  color: red;
+.inst-btn {
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center;
 }
 
-.fa-circle-question {
+.errors {
+  color: rgb(192, 0, 0);
+}
+
+#seq-modal {
   color: #292929 !important;
-  font-size: 3vh !important; 
-  margin-left: 75vh !important;
-  margin-bottom: 3vh !important;
+  font-size: 30px !important; 
   cursor: pointer !important;
 }
 
-.fa-circle-question:hover {
+#seq-modal:hover {
   color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
 }
 
 .fa-arrow-right-from-bracket {
   color: #8d8e8f !important;
-  font-size: 3vh !important;
+  font-size: 25px !important;
   margin-left: 3vh !important;
   cursor: pointer !important;
 }
 
 .fa-arrow-right-from-bracket:hover {
   color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
 }
 
-
-
-
-
-/* Animations Here */
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .nav-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#jam-modal{
+  display: inline-block !important;
+  text-align:center;
+  color: #292929 !important;
+  font-size: 30px !important;
+  justify-content: center !important; 
+  cursor: pointer !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jam-icon {
+  text-align: center;
+  margin-top: 2vh;
 }
-@keyframes nav-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.chord-icon {
+  text-align: center;
+  margin-top: 2vh;
+}
+
+#chord-modal{
+  display: inline-block !important;
+  text-align:center;
+  color: #292929 !important;
+  font-size: 35px !important;
+  justify-content: center !important; 
+  cursor: pointer !important;
+}
+
+.seq-icon {
+  text-align: center;
+  margin-top: 4vh;
+}
+
+#jam-modal:hover {
+  color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
+}
+
+#chord-modal:hover {
+  color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
+}
+
+.git-icon {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+#git {
+  display: inline-block !important;
+  text-align:center !important;
+  color: #292929 !important;
+  font-size: 35px !important;
+  justify-content: center !important; 
+  cursor: pointer !important;
+}
+
+#git:hover {
+  color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
+}
+
+#linked {
+  display: inline-block !important;
+  text-align:center !important;
+  color: #292929 !important;
+  font-size: 35px !important;
+  justify-content: center !important; 
+  cursor: pointer !important;
+  padding: 0.5%;
+}
+
+#linked:hover {
+  color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
 }
 
 
 /* Sequencer styling here */
-
 .sequencer{
   text-align: center;
   margin-top: 100px;
@@ -173,24 +258,90 @@ input[type=checkbox] {
   background-color: #292929 !important;
 }
 
+.seq-container {
+  background: url(./assets/bg3.png) no-repeat; 
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+
+/* Jam Page Styling here */
+.jam-container {
+  background: url(./assets/bg1.png) no-repeat; 
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+
+/* Home page styling here */
+.home {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.home-container {
+  background: url(./assets/bg4.png) no-repeat; 
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.footer {
+  color: #292929 !important;
+  text-align: center;
+  font-size: 70%;
+  margin-top: 70vh;
+  cursor:default;
+}
+
+
+/* Ideas page styling here */
+.ideas {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.idea-container {
+  background: url(./assets/bg2.png) no-repeat; 
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.list {
+  background-color: #292929 !important;
+  color: #8d8e8f !important;
+  border: 0.5px solid #292929 !important;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.list:hover{
+  color: #3eda50 !important;
+}
+
 
 /* Sidebar styling here */
-
 .sidebar {
   background-color: #292929 !important;
   color: #8d8e8f !important;
-  /* box-shadow: inset 0px 0px 15px 1px #3eda50; */
 }
-
-.inst-btn {
-  text-align: center;
-  margin-top: 50px;
-  justify-content: center;
-}
-
 
 .sidebar-elements:hover{
   color:#3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
   cursor: pointer;
 }
 
@@ -205,6 +356,10 @@ input[type=checkbox] {
   color:#3eda50 !important;
 }
 
+.modal-header {
+  background-color: #8d8e8f !important;
+  border-color: #ffffff00 !important;
+}
 
 
 /* Piano Styling Here */
@@ -212,9 +367,9 @@ input[type=checkbox] {
   display: flex;
   flex-direction: row;
   text-align: center;
-  margin-top: 1vh;
   justify-content: center;
-  height: 100vh;
+  height: 33vh;
+  margin-top: 1vh;
 }
 
 .key{
@@ -222,18 +377,16 @@ input[type=checkbox] {
   height: 30vh;
   width: 6vh;
   border: 0.2vh solid black;
-  cursor: pointer;
 }
 
 .key-text {
   position: relative;
   color: #8d8e8f;
   font-weight: 600vh;
-  font-size: 2.5vh;
-  margin-top: 25vh;
-  cursor: pointer;
+  font-size: 2.0vh;
+  margin-top: 26vh;
+  cursor:default;
 }
-
 
 .key.flat {
   position: relative;
@@ -244,10 +397,76 @@ input[type=checkbox] {
   height: 20vh;
   width: 3vh;
   z-index: 2;
-  cursor: pointer;
 }
 
 .key.pressed, .key.flat.pressed {
   background-color: #3eda50;
+  box-shadow: 0 5px 10px #3eda50;
+
 }
+
+
+/* Drum Pad styling here  */
+.drum-pad {
+  display: grid;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+}
+
+.pad {
+  background-color: #292929;
+  border-radius: 1vh;
+  border: 0.2vh solid #8d8e8f;
+  text-align: center;
+  width: 15vh;
+  height: 14vh;
+  position: relative;
+  color: #8d8e8f;
+  font-weight: 600vh;
+  font-size: 2.5vh;
+}
+
+.pad-text {
+  margin-top: 5vh;
+  cursor:default;
+}
+
+.pad.pressed{
+  background-color: #3eda50;
+  box-shadow: 0 5px 10px #3eda50;
+}
+
+
+/* Animations Here */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .nav-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes nav-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 
