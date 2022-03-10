@@ -13,17 +13,17 @@ function Jam() {
 
   return (
     <motion.div
-    className="jam-container"
+      className="jam-container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit ={{opacity: 0}} 
     >
       <div className="jam-icon">
         <i
-        id="jam-modal"
-        className="fa-regular fa-circle-question"
-        onClick={() => setJamShow(true)}
-      ></i>
+          id="jam-modal"
+          className="fa-regular fa-circle-question"
+          onClick={() => setJamShow(true)}>
+        </i>
       </div>
       <ModalJam
         show={jamShow}
@@ -31,10 +31,10 @@ function Jam() {
       />
       <div className="chord-icon">
         <GiPianoKeys
-        id="chord-modal"
-        className="chord"
-        onClick={() => setChordShow(true)}
-      />
+          id="chord-modal"
+          className="chord"
+          onClick={() => setChordShow(true)}
+        />
       </div>
       <ModalChords
         show={chordShow}

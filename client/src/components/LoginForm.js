@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import {Form, Button} from 'react-bootstrap'
-
+import { Form } from 'react-bootstrap'
 
 function LoginForm({onLogin, setShowLogin}) {
   const [username, setUsername] = useState("");
@@ -31,10 +30,10 @@ function LoginForm({onLogin, setShowLogin}) {
 
   return (
     <div className="form-container">
-      <div className="d-grid age-100 justify-content-center align-items-center" id="form-container">
-        <Form className="text-center rounded p-4 p-sm-3"onSubmit={handleSubmit} id="sign-in-form">
-          <Form.Group id="form-text" className="mb-3">
-            <Form.Label htmlFor="username">Username</Form.Label>
+      <div id="form-container">
+        <Form onSubmit={handleSubmit} id="sign-in-form">
+          <Form.Group id="form-text" className="mb-4">
+            <Form.Label>Username</Form.Label>
             <Form.Control
               type="text"
               id="username"
@@ -45,7 +44,7 @@ function LoginForm({onLogin, setShowLogin}) {
             />
           </Form.Group>
           <Form.Group id="form-text" className="mb-3">
-            <Form.Label htmlFor="password">Password</Form.Label>
+            <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
               placeholder="Enter Password"
@@ -60,10 +59,12 @@ function LoginForm({onLogin, setShowLogin}) {
             return (<p className='errors' key={e}>{e}</p>)
             }) : null
           }
-          <button  className="login-btn" type="submit" >
-              {isLoading ? "Loading..." : "Sign In"}
-          </button> <button className="login-btn"  onClick={() => setShowLogin(false)}>Sign Up</button>
-          
+          <button className="login-btn" type="submit">
+            {isLoading ? "Loading..." : "Sign In"}
+          </button> 
+          <button className="login-btn"  onClick={() => setShowLogin(false)}>
+            Sign Up
+          </button>
         </Form>
       </div>
     </div>

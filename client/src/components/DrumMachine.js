@@ -3,10 +3,6 @@ import DrumPad from './DrumPad'
 import _ from 'lodash';
 
 function DrumMachine() {
-    // const kick = new Audio("808/snd1.wav");
-    // const snare = new Audio("808/snd3.wav");
-    // const hat = new Audio("808/snd7.wav");
-
     const pads = ['KICK', 'SNARE', 'HAT', '808', 'CLAP', 'RIDE', 'PERC1', 'PERC2', 'PERC3']
     const validPads = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
     const keyToPad = {
@@ -29,7 +25,6 @@ function DrumMachine() {
         noteAudio.volume = 0.05;
       }
     }
-
 
     function handlePadDown(event){
       // # Check if the event is repeating if so just return nothing
@@ -72,15 +67,15 @@ function DrumMachine() {
       );
   });
 
-  const padAudio = pads.map((pad, index) => {
-    return (
-      <audio
-        id={pad}
-        key={index}
-        src={`../../pads/${pad}.wav`}
-      />
-    );
-  });
+    const padAudio = pads.map((pad, index) => {
+      return (
+        <audio
+          id={pad}
+          key={index}
+          src={`../../pads/${pad}.wav`}
+        />
+      );
+    });
 
 
 
@@ -91,7 +86,7 @@ function DrumMachine() {
       </div>
       <div>
         {padAudio}
-        </div>
+      </div>
     </div>
   )
 }

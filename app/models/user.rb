@@ -5,6 +5,7 @@ class User < ApplicationRecord
     has_many :ideas, dependent: :destroy
     has_many :patterns, through: :ideas
 
-    validates :username, presence: true, uniqueness: true
+    validates :username, presence: true, uniqueness: true, length: { in: 2..20 }
     validates :password_digest, presence: true, uniqueness: true
+    validates :password, length: { in: 6..20 }
 end

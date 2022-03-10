@@ -18,7 +18,6 @@ function Piano() {
         'E3', 'F3', 'Ff3', 'G3', 'Gf3',
         'A3', 'Af3', 'B3'
     ]
-
     // # This maps keys on keyboard to piano notes
     const keyToNote = {
       z:  'C2',   
@@ -93,10 +92,7 @@ function Piano() {
       };
     });
 
-      
-
-  
-    // # Iterate through notes array and create a key with an index and note prop
+    // Iterate through notes array and create a key with an index and note prop
     const keys = notes.map((note, index) => {
         return (
             <Key
@@ -105,8 +101,6 @@ function Piano() {
             />
         );
     });
-
-
 
     // Iterate through our notes array and create an audio tag with an id a key and the source path the audio files are coming from
     const audioFiles = notes.map((note, index) => {

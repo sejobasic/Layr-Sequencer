@@ -4,7 +4,7 @@ import '../../App.css'
 
 
 
-function Sidebar() {
+function Sidebar({checked, onChange }) {
     const [show, setShow] = useState(false);
 
     function handleClose() {

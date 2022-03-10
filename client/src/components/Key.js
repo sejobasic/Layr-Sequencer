@@ -10,17 +10,17 @@ function Key({note}) {
     }
 
   return (
-      <div>
+    <div>
 {/* If note length is greater than 2 show flat keys without text */}
         {noteIsFlat ? (
-            <div id={note+'1'} className={keyClassName}></div>
-        ) : (
-            <div id={note+'1'} className={keyClassName}>
+          <div id={note+'1'} className={keyClassName}></div>
+          ) : (
+          <div id={note+'1'} className={keyClassName}>
             <div className="key-text">{note}</div>
           </div>
-        )
-    }
-      </div>
+          )
+        }
+    </div>
   )
 }
 

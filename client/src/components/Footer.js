@@ -1,13 +1,14 @@
 import React from 'react'
 
 function Footer() {
+
   return (
     <div>
       <div className="year">
       </div>
       <div className="git-icon">
-      <p className="footer">
-         &copy;{new Date().getFullYear()} Made By Sejo Basic. 
+        <p className="footer">
+          &copy;{new Date().getFullYear()} Made By Sejo Basic. 
         </p>
         <a href="https://github.com/sejobasic" target="_blank" rel="noreferrer"> 
           <i className="fa-brands fa-github" id="git">

@@ -1,15 +1,15 @@
-import React,{useState} from 'react'
-import * as Tone from 'tone'
+import React,{ useState } from 'react'
 import ModalSeq from './modals/ModalSeq'
-import Sidebar from "./modals/Sidebar";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import StepSequencer from './StepSequencer';
+
 
 
 
 function SequencerMain() {
   const [modalShow, setModalShow] = useState(false);
 
-  
+
   return (
     <motion.div
       className="seq-container"
@@ -17,7 +17,6 @@ function SequencerMain() {
       animate={{ opacity: 1 }}
       exit ={{opacity: 0}}
     > 
-      <Sidebar />
     <div className="sequencer">
       <div className='seq-icon'>
       <i 
@@ -30,8 +29,11 @@ function SequencerMain() {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
+      {/* <style>{'body { background-color: #eceaea; }'}</style> */}
+      <div className='seq-main'>
+        <StepSequencer/>
+      </div>
       <style>{'body { background-color: #8d8e8f; }'}</style>
-
     </div> 
 
     </motion.div>

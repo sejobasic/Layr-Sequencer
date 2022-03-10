@@ -31,15 +31,15 @@ function NavBar({user, setUser}) {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" id="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
-          <Nav>
-             <Nav.Link className="nav-text" as={Link} to={"/"}>Home</Nav.Link>
-             <Nav.Link className="nav-text" as={Link} to={"/sequencer"}>Sequencer</Nav.Link>
-             <Nav.Link className="nav-text" as={Link} to={"/ideas"}>Ideas</Nav.Link>
-             <Nav.Link className="nav-text" as={Link} to={"/jam"}>Jam</Nav.Link>
-          </Nav>
+            <Nav>
+              <Nav.Link className="nav-text" as={Link} to={"/"}>Home</Nav.Link>
+              <Nav.Link className="nav-text" as={Link} to={"/sequencer"}>Sequencer</Nav.Link>
+              <Nav.Link className="nav-text" as={Link} to={"/ideas"}>Ideas</Nav.Link>
+              <Nav.Link className="nav-text" as={Link} to={"/jam"}>Jam</Nav.Link>
+            </Nav>
           </Navbar.Collapse>
           <Navbar.Text className="nav-user" id="navbar">
-             Logged in as: {user.username}
+            Logged in as: {user.username}
           </Navbar.Text>
           <i className="fa-solid fa-arrow-right-from-bracket" onClick={handleLogoutClick}></i>
         </Container>
@@ -47,7 +47,7 @@ function NavBar({user, setUser}) {
       <div>
         <AnimatePresence>
           <Routes>
-          <Route path="/" element={<Home user={user} />}/>
+            <Route path="/" element={<Home user={user} />}/>
             <Route path="/sequencer" element={<SequencerMain user={user} />}/>
             <Route path="/ideas" element={<Ideas user={user} />}/>
             <Route path="/jam" element={<Jam />}/>

@@ -1,3 +1,51 @@
+
+/* Background Images Here */
+.landing-container {
+  background: url(./assets/bg5.png) no-repeat; 
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.seq-container {
+  background: url(./assets/bg7.png) no-repeat; 
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.jam-container {
+  background: url(./assets/bg1.png) no-repeat; 
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.home-container {
+  background: url(./assets/bg4.png) no-repeat; 
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.idea-container {
+  background: url(./assets/bg2.png) no-repeat; 
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+} 
+
+
+
 /* Logo and LandingPage Styling Here */
 .App-logo {
   display: block;
@@ -31,15 +79,6 @@
   text-shadow: 0 1px 10px #3eda50;
 }
 
-.landing-container {
-  background: url(./assets/bg5.png) no-repeat; 
-	height: 100vh;
-	position: fixed;
-	width: 100%;
-	background-position: center;
-	background-size: cover;
-}
-
 .acc{
   color: #8d8e8f !important;
   margin-top: 4vh;
@@ -61,7 +100,7 @@
   height: 60vmin;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20vh;
+  margin-top: 30vh;
   justify-content: center;
 
 }
@@ -116,7 +155,7 @@
 
 .inst-btn {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   justify-content: center;
 }
 
@@ -126,7 +165,7 @@
 
 #seq-modal {
   color: #292929 !important;
-  font-size: 30px !important; 
+  font-size: 30px !important;
   cursor: pointer !important;
 }
 
@@ -219,31 +258,30 @@
   padding: 0.5%;
 }
 
-#linked:hover {
+.delay {
   color: #3eda50 !important;
-  text-shadow: 0 1px 10px #3eda50;
 }
 
-
-/* Sequencer styling here */
-.sequencer{
-  text-align: center;
-  margin-top: 100px;
-  justify-content: center;
-  height: 100vh;
-}
-
-.seq {
-  width: 4vh;
-  height: 5vh;
-  padding: 1vh;
-  cursor: pointer;
-  background-color: #292929 !important;
-}
-
-.seq:checked {
+.delay:checked {
   background-color: #3eda50 !important;
 }
+
+.chorus {
+  color: #3eda50 !important;
+}
+
+.chorus:checked {
+  background-color: #3eda50 !important;
+}
+
+.reverb {
+  color: #3eda50 !important;
+}
+
+.reverb:checked {
+  background-color: #3eda50 !important;
+}
+
 
 input[type=checkbox] {
   accent-color: #3eda50 !important;
@@ -255,43 +293,49 @@ input[type=checkbox] {
   height: 2vh;
   padding: 1%;
   cursor: pointer;
-  background-color: #292929 !important;
+  /* background-color: #292929 !important; */
 }
 
-.seq-container {
-  background: url(./assets/bg3.png) no-repeat; 
-	height: 100vh;
-	position: fixed;
-	width: 100%;
-	background-position: center;
-	background-size: cover;
+#linked:hover {
+  color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
+}
+
+#play-btn {
+  text-align: center;
+  margin-right: 10px;
+  font-size: 45px !important;
+  cursor: pointer
+}
+
+#stop-btn {
+  text-align: center;
+  font-size: 45px !important;
+  cursor: pointer
+}
+
+#play-btn:hover {
+  color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
+}
+
+#stop-btn:hover {
+  color: #3eda50 !important;
+  text-shadow: 0 1px 10px #3eda50;
+}
+
+.play-stop {
+  margin-top: 2vh;
 }
 
 
 /* Jam Page Styling here */
-.jam-container {
-  background: url(./assets/bg1.png) no-repeat; 
-	height: 100vh;
-	position: fixed;
-	width: 100%;
-	background-position: center;
-	background-size: cover;
-}
 
 
 /* Home page styling here */
 .home {
   text-align: center;
   margin-top: 5vh;
-}
-
-.home-container {
-  background: url(./assets/bg4.png) no-repeat; 
-	height: 100vh;
-	position: fixed;
-	width: 100%;
-	background-position: center;
-	background-size: cover;
 }
 
 .footer {
@@ -307,15 +351,6 @@ input[type=checkbox] {
 .ideas {
   text-align: center;
   margin-top: 5vh;
-}
-
-.idea-container {
-  background: url(./assets/bg2.png) no-repeat; 
-	height: 100vh;
-	position: fixed;
-	width: 100%;
-	background-position: center;
-	background-size: cover;
 }
 
 .list {
@@ -352,8 +387,10 @@ input[type=checkbox] {
 
 /* Modal Styling Here */
 .my-modal {
-  background-color: #292929 !important;
-  color:#3eda50 !important;
+  text-align: center;
+  background-color: #8d8e8f !important;
+  color:#292929 !important;
+  cursor: default;
 }
 
 .modal-header {
@@ -365,6 +402,7 @@ input[type=checkbox] {
 /* Piano Styling Here */
 .piano{
   display: flex;
+  width: 100%;
   flex-direction: row;
   text-align: center;
   justify-content: center;
@@ -382,7 +420,6 @@ input[type=checkbox] {
 .key-text {
   position: relative;
   color: #8d8e8f;
-  font-weight: 600vh;
   font-size: 2.0vh;
   margin-top: 26vh;
   cursor:default;
@@ -439,7 +476,102 @@ input[type=checkbox] {
 }
 
 
+/* Step Sequencer Styling Here */
+.row-label {
+  float: left;
+  height: 25px;
+  width: 50px;
+  margin-top: 7px;
+}
+
+#controls {
+  margin: 20px 0;
+}
+
+#controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+#controls #bpm {
+  height: 21px;
+}
+
+#controls label {
+  margin: 0 10px;
+}
+
+#step-sequencer {
+  display: inline-block;
+  width: 100%;
+  height: 120px;
+}
+
+.sq-seq {
+  display: flex;
+  width: 90%; 
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.seq-main {
+  text-align: center;
+  max-width: 50%;
+  max-height: 500px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#step-sequencer {
+  width: 700px;
+}
+
+.light .square {
+  background-color: #292929;
+}
+
+.light .square.filled {
+  background-color: #3eda50;
+}
+
+.light .square.filled.active {
+  background-color: #3eda50;
+}
+
+
+.light #controls button:active,
+.light #controls button:hover {
+  background: #3eda50;
+}
+
+
+@keyframes glow {
+  0% {
+  /*border-color: #393;*/
+  border-color:#3eda50;
+  box-shadow: 0 5px 10px #3eda50;
+  /*box-shadow: 0 01 px rgba(200,0,0,.2), inset 0 0 5px rgba(200,0,0,.1), 0 1px 0 #000;*/
+  }	
+  100% {
+    border-color:#3eda50;
+    box-shadow: 0 5px 10px #3eda50;
+  /*border-color: #6f6;*/
+  /*box-shadow: 0 0 5px rgba(200,0,0,.6), inset 0 0 5px rgba(200,0,0,.4), 0 1px 0 #000;*/
+  }
+}
+
+
 /* Animations Here */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -467,6 +599,17 @@ input[type=checkbox] {
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
