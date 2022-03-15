@@ -9,7 +9,7 @@ import Home from "./Home";
 import Jam from "./Jam";
 // import Ideas from "./Ideas";
 
-function NavBar({user, setUser}) {
+function NavBarMain({user, setUser}) {
 
   // # fetch logout route in backend
   function handleLogoutClick() {
@@ -58,4 +58,4 @@ function NavBar({user, setUser}) {
   )
 }
 
-export default NavBar
+export default NavBarMain
