@@ -41,6 +41,7 @@ function SignupForm({onLogin, setShowLogin}) {
           <Form.Control
             type="text"
             id="username"
+            placeholder="Enter Username"
             autoComplete="off"
             value={username}
             onChange={(event) => setUsername(event.target.value)}
@@ -51,6 +52,7 @@ function SignupForm({onLogin, setShowLogin}) {
           <Form.Control
             type="password"
             id="password"
+            placeholder="Enter Password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
             autoComplete="current-password"
@@ -61,6 +63,7 @@ function SignupForm({onLogin, setShowLogin}) {
           <Form.Control
             type="password"
             id="password_confirmation"
+            placeholder="Confirm Password"
             value={passwordConfirmation}
             onChange={(event) => setPasswordConfirmation(event.target.value)}
             autoComplete="current-password"

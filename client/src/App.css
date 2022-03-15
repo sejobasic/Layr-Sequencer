@@ -1,4 +1,3 @@
-
 /* Background Images Here */
 .landing-container {
   background: url(./assets/bg5.png) no-repeat; 
@@ -20,20 +19,20 @@
 .jam-container {
   background: url(./assets/bg1.png) no-repeat; 
 	height: 100vh;
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	background-position: center;
 	background-size: cover;
 }
 
-.home-container {
+/* .home-container {
   background: url(./assets/bg4.png) no-repeat; 
 	height: 100vh;
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	background-position: center;
 	background-size: cover;
-}
+} */
 
 .idea-container {
   background: url(./assets/bg2.png) no-repeat; 
@@ -43,7 +42,6 @@
 	background-position: center;
 	background-size: cover;
 } 
-
 
 
 /* Logo and LandingPage Styling Here */
@@ -82,6 +80,7 @@
 .acc{
   color: #8d8e8f !important;
   margin-top: 4vh;
+  cursor: default;
 }
 
 .form-control:valid {
@@ -102,7 +101,6 @@
   margin-right: auto;
   margin-top: 30vh;
   justify-content: center;
-
 }
 
 
@@ -216,7 +214,7 @@
 
 .seq-icon {
   text-align: center;
-  margin-top: 4vh;
+  margin-top: 2vh;
 }
 
 #jam-modal:hover {
@@ -329,20 +327,81 @@ input[type=checkbox] {
 }
 
 
-/* Jam Page Styling here */
-
-
 /* Home page styling here */
 .home {
   text-align: center;
   margin-top: 5vh;
+  cursor:default;
+}
+
+.description {
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 15px;
+  cursor:default;
+  padding: 5px;
 }
 
 .footer {
   color: #292929 !important;
   text-align: center;
   font-size: 70%;
-  margin-top: 70vh;
+  margin-top: 13vh;
+  cursor:default;
+}
+
+.footer-container {
+  margin-bottom: 1vh;
+}
+
+.jam-img {
+  max-width: 80%;
+  height: auto;
+  border: 2px solid #292929;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.jam-img:hover {
+  opacity: 80%;
+  box-shadow: 0 1px 10px #3eda50;
+}
+
+.column {
+  flex: 10%;
+  padding: 5px;
+}
+
+.row {
+  overflow-x: hidden; 
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.jam-text {
+  font-size: 1.5vw;
+  cursor:default;
+}
+
+.seq-img {
+  max-width: 80%;
+  height: auto;
+  border: 2px solid #292929;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.seq-img:hover {
+  opacity: 80%;
+  box-shadow: 0 1px 10px #3eda50;
+}
+
+.seq-text {
+  font-size: 1.5vw;
   cursor:default;
 }
 
@@ -402,7 +461,7 @@ input[type=checkbox] {
 /* Piano Styling Here */
 .piano{
   display: flex;
-  width: 100%;
+  min-width: 100%;
   flex-direction: row;
   text-align: center;
   justify-content: center;
@@ -501,16 +560,16 @@ input[type=checkbox] {
   margin: 0 10px;
 }
 
-#step-sequencer {
+/* #step-sequencer {
   display: inline-block;
   width: 100%;
   height: 120px;
-}
+} */
 
 .sq-seq {
   display: flex;
   width: 90%; 
-  justify-content: space-evenly;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -532,11 +591,24 @@ input[type=checkbox] {
 }
 
 #step-sequencer {
-  width: 700px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
 }
 
 .light .square {
   background-color: #292929;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 35px;
+  margin: 1px;
+  border: 1px solid #eee;
 }
 
 .light .square.filled {
@@ -553,6 +625,23 @@ input[type=checkbox] {
   background: #3eda50;
 }
 
+.label {
+  color: #292929;
+}
+
+input:focus {
+    border: 1px solid #3eda50;
+    box-shadow: 0 0 3px #3eda50;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.form-control:focus {
+  border: 1px solid #3eda50 !important;
+  box-shadow: 0 0 3px #3eda50 !important;
+  outline-offset: 0px !important;
+  outline: none !important;
+}
 
 @keyframes glow {
   0% {

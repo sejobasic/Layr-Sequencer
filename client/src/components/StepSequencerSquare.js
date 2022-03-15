@@ -2,6 +2,7 @@ import React from 'react';
 import * as Helpers from '../Helpers';
 import '../App.css';
 
+
 function StepSequencerSquare({ active, value, onClick, id }) {
   
   // toggle the square when active and add styling
@@ -17,16 +18,9 @@ function StepSequencerSquare({ active, value, onClick, id }) {
     activeStyles.anim8 = "glow 800ms ease-out infinite alternate";
   }
 
-  return ( 
+  return (
     <div
       style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: 75,
-        height: 35,
-        margin: 2,
-        border: "1px solid #eee",
         animation: activeStyles.anim8,
         background: activeStyles.bg,
       }}

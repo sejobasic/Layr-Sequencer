@@ -7,7 +7,7 @@ import logo from '../assets/logo3.png';
 import SequencerMain from "./SequencerMain";
 import Home from "./Home";
 import Jam from "./Jam";
-import Ideas from "./Ideas";
+// import Ideas from "./Ideas";
 
 function NavBar({user, setUser}) {
 
@@ -34,7 +34,7 @@ function NavBar({user, setUser}) {
             <Nav>
               <Nav.Link className="nav-text" as={Link} to={"/"}>Home</Nav.Link>
               <Nav.Link className="nav-text" as={Link} to={"/sequencer"}>Sequencer</Nav.Link>
-              <Nav.Link className="nav-text" as={Link} to={"/ideas"}>Ideas</Nav.Link>
+              {/* <Nav.Link className="nav-text" as={Link} to={"/ideas"}>Ideas</Nav.Link> */}
               <Nav.Link className="nav-text" as={Link} to={"/jam"}>Jam</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -49,7 +49,7 @@ function NavBar({user, setUser}) {
           <Routes>
             <Route path="/" element={<Home user={user} />}/>
             <Route path="/sequencer" element={<SequencerMain user={user} />}/>
-            <Route path="/ideas" element={<Ideas user={user} />}/>
+            {/* <Route path="/ideas" element={<Ideas user={user} />}/> */}
             <Route path="/jam" element={<Jam />}/>
           </Routes>
         </AnimatePresence>

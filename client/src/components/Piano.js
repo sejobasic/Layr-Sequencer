@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import Key from './Key'
 import _ from 'lodash';
+import { Container } from 'react-bootstrap'
 
 function Piano() {
 
@@ -114,7 +115,7 @@ function Piano() {
     });
 
   return (
-    <div>
+    <div className='piano-container'>
       <div className="piano">
         {keys}
       </div>

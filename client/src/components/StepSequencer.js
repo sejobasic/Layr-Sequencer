@@ -28,7 +28,6 @@ const initialPattern = [
   [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
   [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
 ];
-
 // create new synth instrument
 const synth = new Tone.PolySynth().toMaster();
 

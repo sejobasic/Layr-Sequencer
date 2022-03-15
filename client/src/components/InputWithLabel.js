@@ -11,10 +11,10 @@ function InputWithLabel({id, value, type='text', onInputChange, isFocused, child
   }, [isFocused]);
 
   return (
-    <>
-      <label htmlFor={id}>{children}</label>
+    <div>
+      <label className='label' htmlFor={id}>{children}</label>
       &nbsp;
-      <input
+      <input className='input-text'
         ref={inputRef}
         id={id}
         type={type} 
@@ -22,7 +22,7 @@ function InputWithLabel({id, value, type='text', onInputChange, isFocused, child
         autoFocus={isFocused}
         onChange={onInputChange}
       />
-    </>
+    </div>
   );
 };
 
