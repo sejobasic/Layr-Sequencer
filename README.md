@@ -1,4 +1,4 @@
-# 🎶Layr Sequencer🎶
+# 🎶 Layr Sequencer 🎶
 
 
 ## Description
