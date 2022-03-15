@@ -1,0 +1,474 @@
+/* Different Theme Here */
+/* Logo and LandingPage Styling Here */
+
+.App-logo {
+    display: block;
+    height: 60vmin;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    justify-content: center;
+  }
+  
+  .App-logo:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .landing-page{
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .login-btn {
+    color: #292929 !important;
+    border: none;
+    background: none;
+  }
+  
+  .login-btn:hover {
+    color: #9a8c98 !important;
+    
+  }
+  
+  /* .landing-container {
+    background: url(./assets/bg5.png) no-repeat; 
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+  } */
+  
+  .acc{
+    color: #292929 !important;
+    margin-top: 4vh;
+  }
+  
+  .form-control:valid {
+    color: #292929 !important;
+    background-color:  #eceaea !important;
+    border: 0.5px solid #292929 !important;
+
+  }
+  
+  #form-text {
+    color: #292929 !important;
+  }
+  
+  
+  /* Form Styling here  */
+  .form-container {
+    display: block;
+    height: 60vmin;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    justify-content: center;
+  
+  }
+  
+  
+  /* Navbar Styling Here */
+  .nav-logo img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  #navbar {
+    background-color: #eceaea !important;
+  }
+  
+  .nav-user {
+    color: #292929 !important;
+    cursor:default;
+  }
+  
+  .nav-text {
+    color: #292929 !important;
+    cursor: pointer;
+  }
+  
+  .nav-text:hover {
+    color: #9a8c98 !important;
+  }
+  
+  #basic-navbar-nav {
+    color: #eceaea !important;
+  }
+  
+  
+  /* Button Styling Here */
+  .btn-primary,
+  .btn-primary:active,
+  .btn-primary:visited {
+    background-color: #292929 !important;
+    border-color: #ffffff00 !important;
+    color: #eceaea !important;
+  }
+  .btn-primary:hover {
+    background-color: #9a8c98 !important;
+  
+  }
+  
+  .signup-btn {
+    margin-bottom: 22px !important;
+  }
+  
+  .inst-btn {
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  
+  .errors {
+    color: rgb(192, 0, 0);
+  }
+  
+  #seq-modal {
+    color: #292929 !important;
+    font-size: 30px !important; 
+    cursor: pointer !important;
+  }
+  
+  #seq-modal:hover {
+    color: #9a8c98 !important;
+    
+  }
+  
+  .fa-arrow-right-from-bracket {
+    color: #292929 !important;
+    font-size: 25px !important;
+    margin-left: 3vh !important;
+    cursor: pointer !important;
+  }
+  
+  .fa-arrow-right-from-bracket:hover {
+    color: #9a8c98 !important;
+    
+  }
+  
+  #jam-modal{
+    display: inline-block !important;
+    text-align:center;
+    color: #292929 !important;
+    font-size: 30px !important;
+    justify-content: center !important; 
+    cursor: pointer !important;
+  }
+  
+  .jam-icon {
+    text-align: center;
+    margin-top: 2vh;
+  }
+  
+  .chord-icon {
+    text-align: center;
+    margin-top: 2vh;
+  }
+  
+  #chord-modal{
+    display: inline-block !important;
+    text-align:center;
+    color: #292929 !important;
+    font-size: 35px !important;
+    justify-content: center !important; 
+    cursor: pointer !important;
+  }
+  
+  .seq-icon {
+    text-align: center;
+    margin-top: 4vh;
+  }
+  
+  #jam-modal:hover {
+    color: #9a8c98 !important;
+    
+  }
+  
+  #chord-modal:hover {
+    color: #9a8c98 !important;
+    
+  }
+  
+  .git-icon {
+    text-align: center;
+    margin-top: 5vh;
+  }
+  
+  #git {
+    display: inline-block !important;
+    text-align:center !important;
+    color: #292929 !important;
+    font-size: 35px !important;
+    justify-content: center !important; 
+    cursor: pointer !important;
+  }
+  
+  #git:hover {
+    color: #9a8c98 !important;
+    
+  }
+  
+  #linked {
+    display: inline-block !important;
+    text-align:center !important;
+    color: #292929 !important;
+    font-size: 35px !important;
+    justify-content: center !important; 
+    cursor: pointer !important;
+    padding: 0.5%;
+  }
+  
+  #linked:hover {
+    color: #9a8c98 !important;
+    
+  }
+  
+  
+  /* Sequencer styling here */
+  .sequencer{
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .seq {
+    width: 4vh;
+    height: 5vh;
+    padding: 1vh;
+    cursor: pointer;
+    background-color: #292929 !important;
+  }
+  
+  .seq:checked {
+    background-color: #9a8c98 !important;
+  }
+  
+  input[type=checkbox] {
+    accent-color: #9a8c98 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #eceaea !important;
+    width: 2vh;
+    height: 2vh;
+    padding: 1%;
+    cursor: pointer;
+    background-color: #292929 !important;
+  }
+  
+  /* .seq-container {
+    background: url(./assets/bg3.png) no-repeat; 
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+  } */
+  
+  
+  /* Jam Page Styling here */
+  /* .jam-container {
+    background: url(./assets/bg1.png) no-repeat; 
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+  } */
+  
+  
+  /* Home page styling here */
+  .home {
+    text-align: center;
+    margin-top: 5vh;
+  }
+  
+  /* .home-container {
+    background: url(./assets/bg4.png) no-repeat; 
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+  } */
+  
+  .footer {
+    color: #292929 !important;
+    text-align: center;
+    font-size: 70%;
+    margin-top: 70vh;
+    cursor:default;
+  }
+  
+  
+  /* Ideas page styling here */
+  .ideas {
+    text-align: center;
+    margin-top: 5vh;
+  }
+  
+  /* .idea-container {
+    background: url(./assets/bg2.png) no-repeat; 
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+  } */
+  
+  .list {
+    background-color: #292929 !important;
+    color: #eceaea !important;
+    border: 0.5px solid #292929 !important;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+  
+  .list:hover{
+    color: #9a8c98 !important;
+  }
+  
+  
+  /* Sidebar styling here */
+  .sidebar {
+    background-color: #292929 !important;
+    color: #eceaea !important;
+  }
+  
+  .sidebar-elements:hover{
+    color:#9a8c98 !important;
+    
+    cursor: pointer;
+  }
+  
+  .play-btn {
+    margin-right: 500px;
+  }
+  
+  
+  /* Modal Styling Here */
+  .my-modal {
+    background-color: #292929 !important;
+    color:#9a8c98 !important;
+  }
+  
+  .modal-header {
+    background-color: #eceaea !important;
+    border-color: #ffffff00 !important;
+  }
+  
+  
+  /* Piano Styling Here */
+  .piano{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    height: 33vh;
+    margin-top: 1vh;
+  }
+  
+  .key{
+    background-color: #292929;
+    height: 30vh;
+    width: 6vh;
+    border: 0.2vh solid black;
+  }
+  
+  .key-text {
+    position: relative;
+    color: #eceaea !important;;
+    font-weight: 600vh;
+    font-size: 2.0vh;
+    margin-top: 26vh;
+    cursor:default;
+  }
+  
+  .key.flat {
+    position: relative;
+    background-color: #eceaea !important;;
+    border: 0.2vh solid black;
+    margin-left: -1.5vh;
+    margin-right: -10vh;
+    height: 20vh;
+    width: 3vh;
+    z-index: 2;
+  }
+  
+  .key.pressed, .key.flat.pressed {
+    background-color: #9a8c98 !important;
+    box-shadow: 0 5px 10px #9a8c98 !important;
+  
+  }
+  
+  
+  /* Drum Pad styling here  */
+  .drum-pad {
+    display: grid;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+  }
+  
+  .pad {
+    background-color: #292929;
+    border-radius: 1vh;
+    border: 0.2vh solid #eceaea !important;;
+    text-align: center;
+    width: 15vh;
+    height: 14vh;
+    position: relative;
+    color: #eceaea !important;;
+    font-weight: 600vh;
+    font-size: 2.5vh;
+  }
+  
+  .pad-text {
+    margin-top: 5vh;
+    cursor:default;
+  }
+  
+  .pad.pressed{
+    background-color: #9a8c98 !important;
+    box-shadow: 0 5px 10px #9a8c98 !important;
+  }
+  
+  
+  /* Animations Here */
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .nav-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes nav-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
