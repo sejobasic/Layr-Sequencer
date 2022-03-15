@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
 import { motion } from 'framer-motion'
 import jam from '../assets/jam-img.png'
@@ -30,13 +31,13 @@ function Home({user}) {
         <div className='column'>
           <h5 className='jam-text'>VISIT SEQUENCER PAGE</h5>
           <Link to="/sequencer">
-            <img className='jam-img' src={seq} />
+            <img className='jam-img' src={seq} alt="sequencer home image" />
           </Link>
         </div>
         <div className='column'>
         <h5 className='seq-text'>VISIT JAM PAGE</h5>
           <Link to="/jam">
-            <img className='seq-img' src={jam} />
+            <img className='seq-img' src={jam} alt="jam home image" />
           </Link>
         </div>
       </div>
