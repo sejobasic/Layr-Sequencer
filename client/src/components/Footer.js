@@ -10,7 +10,7 @@ function Footer() {
         <p className="footer">
           &copy;{new Date().getFullYear()} Made By Sejo Basic. 
         </p>
-        <a href="https://github.com/sejobasic" target="_blank" rel="noreferrer"> 
+        <a href="https://github.com/sejobasic/Layr-Sequencer" target="_blank" rel="noreferrer"> 
           <i className="fa-brands fa-github" id="git">
           </i>
         </a>
