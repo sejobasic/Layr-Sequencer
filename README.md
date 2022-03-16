@@ -1,4 +1,4 @@
-# 🎶 Layr Sequencer 🎶
+# 🟩 🟩 🟩 Layr Sequencer 🟩 🟩 🟩
 
 
 ## Description
@@ -28,3 +28,6 @@ Currently the sequencer only enables the user with a stock default sound. In the
 - Tone JS
 - Adobe Photoshop
 
+🟩 🟩 🟩 🟩 🟩
+🟩 🟩 🟩 🟩 🟩
+🟩 🟩 🟩 🟩 🟩
